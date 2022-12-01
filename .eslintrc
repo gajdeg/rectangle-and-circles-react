@@ -1,0 +1,51 @@
+{
+  "extends": ["eslint:recommended", "react-app", "plugin:react/recommended"],
+  "plugins": ["react"],
+  "rules": {
+    "block-scoped-var": "error",
+    "getter-return": "error",
+    "max-params": ["error", 4],
+    "no-alert": "error",
+    "no-case-declarations": "warn",
+    "no-class-assign": "error",
+    "no-cond-assign": "error",
+    "no-console": "warn",
+    "no-const-assign": "error",
+    "no-constant-condition": 1,
+    "no-dupe-args": "error",
+    "no-duplicate-imports": "warn",
+    "no-eq-null": "warn",
+    "no-eval": "error",
+    "no-extend-native": "error",
+    "no-implied-eval": "error",
+    "no-invalid-this": "error",
+    "no-mixed-operators": "warn",
+    "no-multi-assign": "error",
+    "no-multi-str": "error",
+    "no-template-curly-in-string": "warn",
+    "no-unused-vars": "warn",
+    "no-unexpected-multiline": 0,
+    "prefer-template": "error",
+    "no-script-url": 0,
+    "indent": 0,
+    "spaced-comment": [
+      "warn",
+      "always",
+      {
+        "markers": ["/"]
+      }
+    ],
+    "react/prop-types": "off",
+    "react/no-children-prop": "off",
+    "react/display-name": "off",
+    "react/no-access-state-in-setstate": "error",
+    "react/no-unused-state": "warn",
+    "react/self-closing-comp": "warn",
+    "react/jsx-boolean-value": 1,
+    "react/jsx-key": 0,
+    "react/no-unescaped-entities": 0,
+    "react/react-in-jsx-scope": 0,
+    "curly": 0,
+    "eqeqeq": "error"
+  }
+}

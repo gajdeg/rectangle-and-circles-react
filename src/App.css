@@ -13,9 +13,30 @@
   margin: 20px;
 }
 
-#btnUndo,
-#btnRedo {
-  background-color: rgba(255, 0, 0, 0.362);
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.btn-blue {
+  background-color: steelblue;
+}
+
+.btn-orange {
+  background-color: orange;
+}
+
+.btn-group {
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  display: inline-grid;
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
+button {
   border: none;
   color: white;
   padding: 15px 32px;
@@ -26,38 +47,16 @@
   cursor: pointer;
   border-radius: 5px;
 }
-#btnSave,
-#btnClear {
-  background-color: rgb(0, 102, 255);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
-  cursor: pointer;
-  border-radius: 5px;
+
+button:hover:not(:disabled) {
+  opacity: 0.66;
 }
-#btnUndo:hover,
-#btnRedo:hover {
-  background-color: white;
-  color: rgba(255, 0, 0, 0.362);
-  border: solid rgba(255, 0, 0, 0.362);
+
+button:disabled {
+  background-color: #ffffff20;
+  cursor: default;
 }
-#btnSave:hover,
-#btnClear:hover {
-  background-color: white;
-  color: rgb(0, 102, 255);
-  border: solid rgb(0, 102, 255);
-}
-#btnUndo:disabled,
-#btnRedo:disabled,
-#btnClear:disabled,
-#btnSave:disabled {
-  background-color: gray;
-  pointer-events: none;
-}
+
 .container {
   flex: 3;
   display: flex;
@@ -67,13 +66,13 @@
 
 .rectangle {
   position: absolute;
-  border: solid red;
+  outline: 2px solid red;
   height: 300px;
   width: 500px;
 }
 .blue {
   position: relative;
-  border: solid blue;
+  outline: 2px solid blue;
   visibility: hidden;
 }
 .circle {

@@ -23,9 +23,10 @@ export const Form = ({ onSubmit, submittedCoords }) => {
   const handleReset = () => {
     setCoords(submittedCoords);
   };
-
-  const disableReset = submittedCoords === coords;
-  const disableSubmit = submittedCoords === coords;
+  const disableReset =
+    JSON.stringify(submittedCoords) === JSON.stringify(coords);
+  const disableSubmit =
+    JSON.stringify(submittedCoords) === JSON.stringify(coords);
 
   return (
     <form className="navbar-nav" id="myform">
